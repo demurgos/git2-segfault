@@ -1,0 +1,515 @@
+execve("./target/debug/git2-segfault", ["./target/debug/git2-segfault", "2"], 0x7fffa7deba28 /* 60 vars */) = 0
+brk(NULL)                               = 0x557a92374000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffdedf839e0) = -1 EINVAL (Invalid argument)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=178927, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 178927, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f98e5dc5000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libssl.so.1.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \320\1\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=593600, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f98e5dc3000
+mmap(NULL, 596336, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f98e5d31000
+mprotect(0x7f98e5d4e000, 425984, PROT_NONE) = 0
+mmap(0x7f98e5d4e000, 315392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f98e5d4e000
+mmap(0x7f98e5d9b000, 106496, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6a000) = 0x7f98e5d9b000
+mmap(0x7f98e5db6000, 53248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x84000) = 0x7f98e5db6000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libcrypto.so.1.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0p\7\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2999144, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 3018736, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f98e5a50000
+mmap(0x7f98e5ac6000, 1732608, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x76000) = 0x7f98e5ac6000
+mmap(0x7f98e5c6d000, 598016, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21d000) = 0x7f98e5c6d000
+mmap(0x7f98e5cff000, 188416, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2ae000) = 0x7f98e5cff000
+mmap(0x7f98e5d2d000, 16368, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f98e5d2d000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=100184, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 102416, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f98e5a36000
+mprotect(0x7f98e5a39000, 86016, PROT_NONE) = 0
+mmap(0x7f98e5a39000, 57344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f98e5a39000
+mmap(0x7f98e5a47000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x7f98e5a47000
+mmap(0x7f98e5a4e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f98e5a4e000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=478272, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 107240, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f98e5a1b000
+mprotect(0x7f98e5a1e000, 90112, PROT_NONE) = 0
+mmap(0x7f98e5a1e000, 73728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f98e5a1e000
+mmap(0x7f98e5a30000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7f98e5a30000
+mmap(0x7f98e5a34000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7f98e5a34000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\324\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0@\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 80, 848) = 80
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\205vn\235\204X\261n\234|\346\340|q,\2"..., 68, 928) = 68
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2463384, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2136752, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f98e5811000
+mprotect(0x7f98e583d000, 1880064, PROT_NONE) = 0
+mmap(0x7f98e583d000, 1531904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2c000) = 0x7f98e583d000
+mmap(0x7f98e59b3000, 344064, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a2000) = 0x7f98e59b3000
+mmap(0x7f98e5a08000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f6000) = 0x7f98e5a08000
+mmap(0x7f98e5a0e000, 51888, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f98e5a0e000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=16488, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 16400, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f98e580c000
+mmap(0x7f98e580d000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f98e580d000
+mmap(0x7f98e580e000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f98e580e000
+mmap(0x7f98e580f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f98e580f000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=15632, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f98e580a000
+mmap(NULL, 16400, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f98e5805000
+mmap(0x7f98e5806000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f98e5806000
+mmap(0x7f98e5807000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f98e5807000
+mmap(0x7f98e5808000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f98e5808000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f98e5802000
+arch_prctl(ARCH_SET_FS, 0x7f98e58027c0) = 0
+set_tid_address(0x7f98e5802a90)         = 167404
+set_robust_list(0x7f98e5802aa0, 24)     = 0
+rseq(0x7f98e5803160, 0x20, 0, 0x53053053) = 0
+mprotect(0x7f98e5a08000, 12288, PROT_READ) = 0
+mprotect(0x7f98e5808000, 4096, PROT_READ) = 0
+mprotect(0x7f98e580f000, 4096, PROT_READ) = 0
+mprotect(0x7f98e5a34000, 4096, PROT_READ) = 0
+mprotect(0x7f98e5a4e000, 4096, PROT_READ) = 0
+mprotect(0x7f98e5cff000, 180224, PROT_READ) = 0
+mprotect(0x7f98e5db6000, 36864, PROT_READ) = 0
+mprotect(0x557a908fa000, 28672, PROT_READ) = 0
+mprotect(0x7f98e5e26000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7f98e5dc5000, 178927)          = 0
+poll([{fd=0, events=0}, {fd=1, events=0}, {fd=2, events=0}], 3, 0) = 0 (Timeout)
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f98e5853560}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, {sa_handler=0x557a90894730, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7f98e5853560}, NULL, 8) = 0
+rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGBUS, {sa_handler=0x557a90894730, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7f98e5853560}, NULL, 8) = 0
+sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f98e5dee000
+mprotect(0x7f98e5dee000, 4096, PROT_NONE) = 0
+sigaltstack({ss_sp=0x7f98e5def000, ss_flags=0, ss_size=8192}, NULL) = 0
+getrandom("\x79\x1f\xaa\x91\x8b\x7b\xd1\x24", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x557a92374000
+brk(0x557a92395000)                     = 0x557a92395000
+openat(AT_FDCWD, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 3
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+read(3, "557a90761000-557a90773000 r--p 0"..., 1024) = 1024
+read(3, "0 r--p 00002000 103:03 30281154 "..., 1024) = 1024
+read(3, " 30281142                  /usr/"..., 1024) = 1024
+read(3, "/lib/libz.so.1.2.11\n7f98e5a39000"..., 1024) = 1024
+read(3, "0 rw-p 00000000 00:00 0 \n7f98e5d"..., 1024) = 1024
+read(3, "   /usr/lib/ld-linux-x86-64.so.2"..., 1024) = 564
+close(3)                                = 0
+sched_getaffinity(167404, 32, [0, 1, 2, 3, 4, 5, 6, 7]) = 32
+mkdir("./git2", 0777)                   = -1 EEXIST (File exists)
+statx(0, NULL, AT_STATX_SYNC_AS_STAT, STATX_ALL, NULL) = -1 EFAULT (Bad address)
+statx(AT_FDCWD, "./git2", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+statx(AT_FDCWD, "/var/ssl", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82870) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/share/ssl", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82870) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/local/ssl", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82870) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/local/openssl", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82870) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/local/etc/openssl", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82870) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/local/share", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+statx(AT_FDCWD, "/usr/local/share/cert.pem", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82860) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/local/share/certs.pem", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82860) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/local/share/ca-bundle.pem", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82860) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/local/share/cacert.pem", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82860) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/local/share/ca-certificates.crt", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82860) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/local/share/certs/ca-certificates.crt", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82860) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/local/share/certs/ca-root-nss.crt", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82860) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/local/share/certs/ca-bundle.crt", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82860) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/local/share/CARootCertificates.pem", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82860) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/local/share/tls-ca-bundle.pem", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82860) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/local/share/certs", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82b50) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/lib/ssl", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82870) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/usr/ssl", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82870) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/etc/openssl", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82870) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/etc/pki/ca-trust/extracted/pem", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82870) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/etc/pki/tls", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffdedf82870) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/etc/ssl", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+statx(AT_FDCWD, "/etc/ssl/cert.pem", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0444, stx_size=209331, ...}) = 0
+statx(AT_FDCWD, "/etc/ssl/certs", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=20480, ...}) = 0
+futex(0x7f98e5d2f858, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f98e5d2f84c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f98e5d2f844, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f98e5d2f938, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f98e5d2f830, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f98e5d2f828, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f98e5d2cc7c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f98e5d2f704, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f98e5d2f69c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f98e5d2f690, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f98e5d2f83c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f98e5d2f7f8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f98e5d2f7f0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/etc/ssl/openssl.cnf", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=10909, ...}, AT_EMPTY_PATH) = 0
+read(3, "#\n# OpenSSL example configuratio"..., 4096) = 4096
+read(3, "# WARNING: ancient versions of N"..., 4096) = 4096
+brk(0x557a923b6000)                     = 0x557a923b6000
+read(3, "es of the usage of nsCertType. I"..., 4096) = 2717
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+futex(0x7f98e5d2f820, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f98e5dc2880, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+sysinfo({uptime=181261, loads=[107232, 101632, 133696], totalram=16623194112, freeram=1228247040, sharedram=2133356544, bufferram=470970368, totalswap=4294963200, freeswap=2004643840, procs=1714, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+futex(0x7f98e5dc2968, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f98e5dc295c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/dev/urandom", O_RDONLY) = 3
+read(3, "b\256\322\222Lu^\4", 8)        = 8
+close(3)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+futex(0x7f98e5dc2788, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f98e5d2f9a8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+getpid()                                = 167404
+getrandom("\xf6\xe9\x15\x44\x14\x88\x6e\x98\xc3\x75\xc2\x74\xe0\x59\x30\xc4\xf9\x84\x6a\xb1\x51\x49\xce\xbb\x32\x45\x51\xe8\x99\x7c\xab\xdf", 32, 0) = 32
+getpid()                                = 167404
+futex(0x7f98e5d2f978, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+getpid()                                = 167404
+getpid()                                = 167404
+getpid()                                = 167404
+getpid()                                = 167404
+getpid()                                = 167404
+getpid()                                = 167404
+getpid()                                = 167404
+getpid()                                = 167404
+getpid()                                = 167404
+getpid()                                = 167404
+getpid()                                = 167404
+getpid()                                = 167404
+openat(AT_FDCWD, "/etc/ssl/cert.pem", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=209331, ...}, AT_EMPTY_PATH) = 0
+read(3, "# ACCVRAIZ1\n-----BEGIN CERTIFICA"..., 4096) = 4096
+read(3, "b8EZ6WdmF/9ARP67Jpi6Yb+tmLSbkyU+"..., 4096) = 4096
+read(3, "roRX1BiLLHwGy43NFBkRJLLtJJRTWzsO"..., 4096) = 4096
+read(3, "1UEBhMC\nVVMxFDASBgNVBAoMC0FmZmly"..., 4096) = 4096
+read(3, "BMGByqGSM49AgEGCCqGSM49AwEHA0IAB"..., 4096) = 4096
+read(3, "A1UdIAQRMA8wDQYLKwYBBAGwLQMEAQEw"..., 4096) = 4096
+read(3, "4AYQBuAG8AdgBhACAANAA3ACAAQgBhAH"..., 4096) = 4096
+read(3, "---\nMIIFWTCCA0GgAwIBAgIBAjANBgkq"..., 4096) = 4096
+brk(0x557a923d7000)                     = 0x557a923d7000
+read(3, "5b3RpczERMA8GA1UEAwwIQ2VydGlnbmE"..., 4096) = 4096
+read(3, "H/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAc"..., 4096) = 4096
+read(3, "OKRKIm5wFv5HdnnJ63/mgKXwcZQkpsCL"..., 4096) = 4096
+read(3, "jW1dReTagVphZzNTxl4\nWxmB82M+w85b"..., 4096) = 4096
+read(3, "Jqsi\nl2D4kF501KKaU73yqWjgom7C12y"..., 4096) = 4096
+read(3, "pLrqeLppysb0ZRGxhNaKatBYSaVqM\n4d"..., 4096) = 4096
+read(3, "lpIFFAmsSS3V0T8gj43DydXLefInwz5F"..., 4096) = 4096
+read(3, "CxMQd3d3\nLmRpZ2ljZXJ0LmNvbTErMCk"..., 4096) = 4096
+read(3, "Q6BBoD+GPWh0dHA6Ly93d3cuZC10cnVz"..., 4096) = 4096
+brk(0x557a923f8000)                     = 0x557a923f8000
+brk(0x557a923f7000)                     = 0x557a923f7000
+read(3, "MQswCQYDVQQG\nEwJVUzETMBEGA1UECxM"..., 4096) = 4096
+read(3, "QEKF6dk4jeihU80Bv2noWgby\nRQuQ+q7"..., 4096) = 4096
+read(3, "C6bUF74mzQ61VfZgIaJPRbiWlH47jCff"..., 4096) = 4096
+read(3, "MWuIjnDrnBdSqEGULoe256YSxXXfW8AK"..., 4096) = 4096
+read(3, "0ypQBaNV2cvnOVPAmJ6MVGKLJrD3fY18"..., 4096) = 4096
+read(3, "ICHjCCAaSgAwIBAgIRYFlJ4CYuu1X5Cn"..., 4096) = 4096
+read(3, "2oW9UivFyVm4uiMVRQkQVlO6jxTiWm05"..., 4096) = 4096
+read(3, "vcmluZyBHbWJIMRkw\nFwYDVQQDExBHTE"..., 4096) = 4096
+brk(0x557a92418000)                     = 0x557a92418000
+brk(0x557a92417000)                     = 0x557a92417000
+read(3, "ypQ5Yj36w6gZoOKcUcqeldHraenjAKOc"..., 4096) = 4096
+read(3, "uhzf9gR7A/Xe8bVr2XIZYtCtFenTgCR2"..., 4096) = 4096
+read(3, "TW8VX6iVNvRLuMA4GA1UdDwEB/wQE\nAw"..., 4096) = 4096
+read(3, "wAwggIKAoIC\nAQDC+Kk/G4n8PDwEXT2Q"..., 4096) = 4096
+read(3, "NmO7ilMlHIhqqhqZ5/dpTCpmy3QfDVyA"..., 4096) = 4096
+read(3, "EPVeKlh6cdbjTMM1gCIOQ045U8U1mwF1"..., 4096) = 4096
+read(3, "ghqpZXjFaH3pO3JLF+l+/+sKAIuvtd7u"..., 4096) = 4096
+read(3, "oLAKApxn1ntxVUwOXewdI/5n7\nN4okxF"..., 4096) = 4096
+read(3, "QKDB1OQVZFUiBCVVNJTkVTUyBQTEFURk"..., 4096) = 4096
+brk(0x557a92438000)                     = 0x557a92438000
+brk(0x557a92437000)                     = 0x557a92437000
+read(3, "sA106Y2oeqKtCnLrFAMadMMA4GA1UdDw"..., 4096) = 4096
+read(3, "YJKoZIhvcNAQELBQAD\nggIBABj6W3X8P"..., 4096) = 4096
+read(3, "arHakE7kNQIXLJgapDwyM4DYvmL7ftuK"..., 4096) = 4096
+read(3, "wT6dYB9v0lQ7e/JxHwc64B+27bQ3RP+\n"..., 4096) = 4096
+read(3, "ao\nwW8xQmxSPmjL8xk037uHGFaAJsTQ3"..., 4096) = 4096
+read(3, "wQFMAMBAf8wHwYDVR0jBBgwFoAUW8pe5"..., 4096) = 4096
+read(3, "rzQdjt0Oj8P2FI7bADFB0QDksZ4LtO7I"..., 4096) = 4096
+read(3, "gv2cOj4QyDvvBmVmepsZGD3/cVE8MC5f"..., 4096) = 4096
+read(3, "SAtIEcyMIICIjANBgkqhkiG9w0BAQEFA"..., 4096) = 4096
+brk(0x557a92458000)                     = 0x557a92458000
+brk(0x557a92457000)                     = 0x557a92457000
+read(3, "AYTAlBMMSgwJgYDVQQKDB9L\ncmFqb3dh"..., 4096) = 4096
+read(3, "MjgDfxT2\nAHMsWbEhBuH7rBiVDKP/mZb"..., 4096) = 4096
+read(3, "tification Authority\n-----BEGIN "..., 4096) = 4096
+read(3, "ss 2\n-----BEGIN CERTIFICATE-----"..., 4096) = 4096
+read(3, "LgsyX8OsNJLN13qudULXjS99HMpw+0mF"..., 4096) = 4096
+read(3, "BPqpK5j\nwa19hAM8EHiGG3njxPPyBJUg"..., 4096) = 4096
+read(3, "4lVYa8bJYS7cSN8h8s+1LgOGN+jIj\ntm"..., 4096) = 4096
+read(3, "nHcAP9Dc1ew91Pq7P8yF1m9/\nqS3fuQL"..., 4096) = 4096
+read(3, "dDQS5jcmwwEAYJKwYBBAGCNxUBBAMCAQ"..., 4096) = 435
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+brk(0x557a92478000)                     = 0x557a92478000
+futex(0x7f98e5d2cbdc, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+newfstatat(AT_FDCWD, "./git2/.git", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getcwd("/data/projects/various/git2-segfault", 1024) = 37
+readlink("/data/projects/various/git2-segfault/git2", 0x7ffdedf81900, 1023) = -1 EINVAL (Invalid argument)
+readlink("/data/projects/various/git2-segfault/git2/.git", 0x7ffdedf81900, 1023) = -1 EINVAL (Invalid argument)
+faccessat2(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/", F_OK, AT_EACCESS) = 0
+getcwd("/data/projects/various/git2-segfault", 1024) = 37
+readlink("/data/projects/various/git2-segfault/git2", 0x7ffdedf81900, 1023) = -1 EINVAL (Invalid argument)
+faccessat2(AT_FDCWD, "/data/projects/various/git2-segfault/git2/", F_OK, AT_EACCESS) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/commondir", 0x7ffdedf830b0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/HEAD", {st_mode=S_IFREG|0644, st_size=23, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/objects/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/refs/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/config", {st_mode=S_IFREG|0644, st_size=92, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/config", {st_mode=S_IFREG|0644, st_size=92, ...}, 0) = 0
+access("/data/projects/various/git2-segfault/git2/.git/config", F_OK) = 0
+access("/data/projects/various/git2-segfault/git2/.git/config", R_OK) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/config", {st_mode=S_IFREG|0644, st_size=92, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/config", {st_mode=S_IFREG|0644, st_size=92, ...}, 0) = 0
+openat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/config", O_RDONLY|O_CLOEXEC) = 3
+read(3, "[core]\n\tbare = false\n\trepository"..., 92) = 92
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/config", {st_mode=S_IFREG|0644, st_size=92, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/config", {st_mode=S_IFREG|0644, st_size=92, ...}, 0) = 0
+chmod("/data/projects/various/git2-segfault/git2/.git/config", 0100744) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/config", {st_mode=S_IFREG|0744, st_size=92, ...}, 0) = 0
+openat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/_git2_608e92e9307d078c", O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC, 0666) = 3
+close(3)                                = 0
+unlink("/data/projects/various/git2-segfault/git2/_git2_608e92e9307d078c") = 0
+symlink("testing", "/data/projects/various/git2-segfault/git2/_git2_608e92e9307d078c") = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/_git2_608e92e9307d078c", {st_mode=S_IFLNK|0777, st_size=7, ...}, AT_SYMLINK_NOFOLLOW) = 0
+unlink("/data/projects/various/git2-segfault/git2/_git2_608e92e9307d078c") = 0
+readlink("/data", 0x7ffdedf81710, 1023) = -1 EINVAL (Invalid argument)
+readlink("/data/projects", 0x7ffdedf81710, 1023) = -1 EINVAL (Invalid argument)
+readlink("/data/projects/various", 0x7ffdedf81710, 1023) = -1 EINVAL (Invalid argument)
+readlink("/data/projects/various/git2-segfault", 0x7ffdedf81710, 1023) = -1 EINVAL (Invalid argument)
+readlink("/data/projects/various/git2-segfault/git2", 0x7ffdedf81710, 1023) = -1 EINVAL (Invalid argument)
+readlink("/data/projects/various/git2-segfault/git2/.git", 0x7ffdedf81710, 1023) = -1 EINVAL (Invalid argument)
+faccessat2(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/", F_OK, AT_EACCESS) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/.git", 0x7ffdedf830d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/commondir", 0x7ffdedf82e40, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/HEAD", {st_mode=S_IFREG|0644, st_size=23, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/objects/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/refs/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/gitdir", 0x7ffdedf82ed0, 0) = -1 ENOENT (No such file or directory)
+access("/home/demurgos/.gitconfig", F_OK) = 0
+access("/home/demurgos/.config/git/config", F_OK) = -1 ENOENT (No such file or directory)
+access("/etc/gitconfig", F_OK)          = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/config", {st_mode=S_IFREG|0744, st_size=92, ...}, 0) = 0
+access("/data/projects/various/git2-segfault/git2/.git/config", F_OK) = 0
+access("/data/projects/various/git2-segfault/git2/.git/config", R_OK) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/config", {st_mode=S_IFREG|0744, st_size=92, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/config", {st_mode=S_IFREG|0744, st_size=92, ...}, 0) = 0
+openat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/config", O_RDONLY|O_CLOEXEC) = 3
+read(3, "[core]\n\tbare = false\n\trepository"..., 92) = 92
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/demurgos/.gitconfig", {st_mode=S_IFREG|0644, st_size=312, ...}, 0) = 0
+access("/home/demurgos/.gitconfig", F_OK) = 0
+access("/home/demurgos/.gitconfig", R_OK) = 0
+newfstatat(AT_FDCWD, "/home/demurgos/.gitconfig", {st_mode=S_IFREG|0644, st_size=312, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/demurgos/.gitconfig", {st_mode=S_IFREG|0644, st_size=312, ...}, 0) = 0
+openat(AT_FDCWD, "/home/demurgos/.gitconfig", O_RDONLY|O_CLOEXEC) = 3
+read(3, "[user]\n\tname = Charles Samborski"..., 312) = 312
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/config", {st_mode=S_IFREG|0744, st_size=92, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/demurgos/.gitconfig", {st_mode=S_IFREG|0644, st_size=312, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/config", {st_mode=S_IFREG|0744, st_size=92, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/demurgos/.gitconfig", {st_mode=S_IFREG|0644, st_size=312, ...}, 0) = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=359, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=359, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Name Service Switch configurat"..., 4096) = 359
+read(3, "", 4096)                       = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=359, ...}, AT_EMPTY_PATH) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=114, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/host.conf", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=73, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Resolver configuration file.\n#"..., 4096) = 73
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+futex(0x7f98e5a14e0c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/etc/resolv.conf", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=114, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Generated by NetworkManager\nse"..., 4096) = 114
+read(3, "", 4096)                       = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=114, ...}, AT_EMPTY_PATH) = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=178927, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 178927, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f98e57d6000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libnss_mymachines.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@p\0\0\0\0\0\0"..., 832) = 832
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0;e\230u\275\261\224\327\35\206`\371\v\206x;"..., 36, 800) = 36
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=345080, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 349048, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f98e5780000
+mmap(0x7f98e5787000, 221184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f98e5787000
+mmap(0x7f98e57bd000, 81920, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3d000) = 0x7f98e57bd000
+mmap(0x7f98e57d1000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x50000) = 0x7f98e57d1000
+mmap(0x7f98e57d5000, 888, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f98e57d5000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=16200, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 16400, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f98e5de9000
+mmap(0x7f98e5dea000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f98e5dea000
+mmap(0x7f98e5deb000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f98e5deb000
+mmap(0x7f98e5dec000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f98e5dec000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 t\0\0\0\0\0\0"..., 832) = 832
+pread64(3, "\4\0\0\0000\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 64, 792) = 64
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\353m\256\227R\177\310\235\273\r[\265\201\241Z\315"..., 36, 856) = 36
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=42984, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 45128, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f98e5ddd000
+mmap(0x7f98e5de0000, 20480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f98e5de0000
+mmap(0x7f98e5de5000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f98e5de5000
+mmap(0x7f98e5de7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f98e5de7000
+close(3)                                = 0
+mprotect(0x7f98e5de7000, 4096, PROT_READ) = 0
+mprotect(0x7f98e5dec000, 4096, PROT_READ) = 0
+mprotect(0x7f98e57d1000, 12288, PROT_READ) = 0
+prctl(PR_CAPBSET_READ, CAP_MAC_OVERRIDE) = 1
+prctl(PR_CAPBSET_READ, 0x30 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+prctl(PR_CAPBSET_READ, CAP_CHECKPOINT_RESTORE) = 1
+prctl(PR_CAPBSET_READ, 0x2c /* CAP_??? */) = -1 EINVAL (Invalid argument)
+prctl(PR_CAPBSET_READ, 0x2a /* CAP_??? */) = -1 EINVAL (Invalid argument)
+prctl(PR_CAPBSET_READ, 0x29 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+munmap(0x7f98e57d6000, 178927)          = 0
+rt_sigprocmask(SIG_BLOCK, [HUP USR1 USR2 PIPE ALRM CHLD TSTP URG VTALRM PROF WINCH IO], [QUIT], 8) = 0
+futex(0x7f98e57d4ae4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/run/systemd/machines/gitlab.com", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+rt_sigprocmask(SIG_SETMASK, [QUIT], NULL, 8) = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=178927, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 178927, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f98e57d6000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libnss_resolve.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@0\0\0\0\0\0\0"..., 832) = 832
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0AJ\376\311\203\361\2169\275\30\35K\32\343\336D"..., 36, 800) = 36
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=141688, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 145720, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f98e575c000
+mprotect(0x7f98e575f000, 126976, PROT_NONE) = 0
+mmap(0x7f98e575f000, 94208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f98e575f000
+mmap(0x7f98e5776000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7f98e5776000
+mmap(0x7f98e577e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21000) = 0x7f98e577e000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1061880, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 946752, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f98e5674000
+mmap(0x7f98e5684000, 499712, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x7f98e5684000
+mmap(0x7f98e56fe000, 376832, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7f98e56fe000
+mmap(0x7f98e575a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe5000) = 0x7f98e575a000
+close(3)                                = 0
+mprotect(0x7f98e575a000, 4096, PROT_READ) = 0
+mprotect(0x7f98e577e000, 4096, PROT_READ) = 0
+munmap(0x7f98e57d6000, 178927)          = 0
+rt_sigprocmask(SIG_BLOCK, [HUP USR1 USR2 PIPE ALRM CHLD TSTP URG VTALRM PROF WINCH IO], [QUIT], 8) = 0
+futex(0x7f98e577f900, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/run/systemd/resolve/io.systemd.Resolve"}, 42) = 0
+sendto(3, "{\"method\":\"io.systemd.Resolve.Re"..., 93, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 93
+mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f98e57e1000
+recvfrom(3, 0x7f98e57e1010, 135152, MSG_DONTWAIT, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+ppoll([{fd=3, events=POLLIN}], 1, {tv_sec=119, tv_nsec=999952000}, NULL, 8) = 1 ([{fd=3, revents=POLLIN}], left {tv_sec=119, tv_nsec=999700252})
+recvfrom(3, "{\"parameters\":{\"addresses\":[{\"if"..., 135152, MSG_DONTWAIT, NULL, NULL) = 206
+rt_sigprocmask(SIG_SETMASK, [QUIT], NULL, 8) = 0
+close(3)                                = 0
+munmap(0x7f98e57e1000, 135168)          = 0
+openat(AT_FDCWD, "/etc/gai.conf", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2584, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2584, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Configuration for getaddrinfo("..., 4096) = 2584
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+futex(0x7f98e5a13cc4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 3
+bind(3, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+getsockname(3, {sa_family=AF_NETLINK, nl_pid=167404, nl_groups=00000000}, [12]) = 0
+sendto(3, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1646871598, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1646871598, nlmsg_pid=167404}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=89, tstamp=89}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1646871598, nlmsg_pid=167404}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("virbr0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("192.168.122.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("192.168.122.1")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("192.168.122.255")], [{nla_len=11, nla_type=IFA_LABEL}, "virbr0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=506, tstamp=506}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1646871598, nlmsg_pid=167404}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=0, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("wlp2s0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("192.168.1.12")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("192.168.1.12")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("192.168.1.255")], [{nla_len=11, nla_type=IFA_LABEL}, "wlp2s0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=68030, ifa_valid=68030, cstamp=7645027, tstamp=18125764}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 252
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1646871598, nlmsg_pid=167404}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=89, tstamp=89}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], [{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1646871598, nlmsg_pid=167404}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=0, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("wlp2s0")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "2a01:cb14:af3:ee00:3483:7f97:5a90:31e4")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=259199, ifa_valid=259199, cstamp=7645209, tstamp=18125764}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_NOPREFIXROUTE]]], [{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1646871598, nlmsg_pid=167404}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("wlp2s0")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::7e19:fc07:3091:ba5b")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=7645020, tstamp=18125764}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 216
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1646871598, nlmsg_pid=167404}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+close(3)                                = 0
+socket(AF_INET6, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 3
+connect(3, {sa_family=AF_INET6, sin6_port=htons(443), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "2606:4700:90:0:f22e:fbec:5bed:a9b9", &sin6_addr), sin6_scope_id=0}, 28) = 0
+getsockname(3, {sa_family=AF_INET6, sin6_port=htons(44081), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "2a01:cb14:af3:ee00:3483:7f97:5a90:31e4", &sin6_addr), sin6_scope_id=0}, [28]) = 0
+connect(3, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+connect(3, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("172.65.251.78")}, 16) = 0
+getsockname(3, {sa_family=AF_INET6, sin6_port=htons(34671), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "::ffff:192.168.1.12", &sin6_addr), sin6_scope_id=0}, [28]) = 0
+close(3)                                = 0
+socket(AF_INET6, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP) = 3
+connect(3, {sa_family=AF_INET6, sin6_port=htons(443), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "2606:4700:90:0:f22e:fbec:5bed:a9b9", &sin6_addr), sin6_scope_id=0}, 28) = 0
+brk(0x557a9249b000)                     = 0x557a9249b000
+getpid()                                = 167404
+getpid()                                = 167404
+getpid()                                = 167404
+getpid()                                = 167404
+getpid()                                = 167404
+getpid()                                = 167404
+sendto(3, "\26\3\1\19\1\0\0015\3\3#\177R\33\203p\355\230\373\352\363zW}E\242\t\374\335\310\264"..., 318, 0, NULL, 0) = 318
+recvfrom(3, "\26\3\3\0z", 5, 0, NULL, NULL) = 5
+recvfrom(3, "\2\0\0v\3\3\347T\240\272\362t#\253%@[J\243V\331}1\310B\265\253=f7G\331"..., 122, 0, NULL, NULL) = 122
+recvfrom(3, "\24\3\3\0\1", 5, 0, NULL, NULL) = 5
+recvfrom(3, "\1", 1, 0, NULL, NULL)     = 1
+recvfrom(3, "\27\3\3\23\25", 5, 0, NULL, NULL) = 5
+recvfrom(3, "\223enJ\7\277+\7\373\373\331E$X+r\n\357\235\207\2\226\371\376;\346\317\370\315l\n\25"..., 4885, 0, NULL, NULL) = 4885
+newfstatat(AT_FDCWD, "/etc/ssl/certs/65ff7287.0", 0x7ffdedf82480, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=2962, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=2962, ...}, AT_EMPTY_PATH) = 0
+read(4, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0\r\0\0\0\0"..., 4096) = 2962
+lseek(4, -1863, SEEK_CUR)               = 1099
+read(4, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0\r\0\0\0\0"..., 4096) = 1863
+close(4)                                = 0
+sendto(3, "\24\3\3\0\1\1\27\3\3\0E\372\346\7cR\204\n\326\371\347\327\322~\355\33\201\306B\201\361\5"..., 80, 0, NULL, 0) = 80
+sendto(3, "\27\3\3\0\2529L\337\22\37\362\335\221\20\357\201<\205@JWu\227\236\354\216\200]\336p3\220"..., 175, 0, NULL, 0) = 175
+recvfrom(3, "\27\3\3\1\275", 5, 0, NULL, NULL) = 5
+recvfrom(3, "YId#g\337\247\24\365C\257d;\240-\34*\375#\361=\201\325_\231$[\376'\240\303\323"..., 445, 0, NULL, NULL) = 445
+recvfrom(3, "\27\3\3\5j", 5, 0, NULL, NULL) = 5
+recvfrom(3, "\35Y%\247\256\276\323\341\376\241\255\341\2471\217E\346&Z\"\17\334\206\2610td\313Xx\206q"..., 1386, 0, NULL, NULL) = 1386
+recvfrom(3, "\27\3\3\5j", 5, 0, NULL, NULL) = 5
+recvfrom(3, "\206\362\274\320\255~\215\274\200\375\277\256\320\276\25\251I\253\207\16\350\316^,\24>D\373\317\356O\331"..., 1386, 0, NULL, NULL) = 874
+recvfrom(3, "c\331\232\255\375 \202{93\330\347\273\266\375\272\320\272\0010\17\351B\223\321\r\37k>\347\317\272"..., 512, 0, NULL, NULL) = 512
+recvfrom(3, "\27\3\3\1\33", 5, 0, NULL, NULL) = 5
+recvfrom(3, "+\370\364\201\23\22\302W\32\316} l\264#\rt\251\237+.\v6\266\315F\272bm\273`\32"..., 283, 0, NULL, NULL) = 283
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/config", {st_mode=S_IFREG|0744, st_size=92, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/demurgos/.gitconfig", {st_mode=S_IFREG|0644, st_size=312, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/objects/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/objects/pack", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/objects/pack", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/objects/pack/multi-pack-index", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/data/projects/various/git2-segfault/git2/.git/objects/pack/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(4, 0x557a9248c830 /* 2 entries */, 32768) = 48
+getdents64(4, 0x557a9248c830 /* 0 entries */, 32768) = 0
+close(4)                                = 0
+access("/data/projects/various/git2-segfault/git2/.git/objects/info/alternates", F_OK) = -1 ENOENT (No such file or directory)
+--- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=NULL} ---
+rt_sigaction(SIGSEGV, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f98e5853560}, NULL, 8) = 0
+rt_sigreturn({mask=[QUIT]})             = 0
+--- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=NULL} ---
++++ killed by SIGSEGV (core dumped) +++

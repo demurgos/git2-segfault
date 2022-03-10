@@ -24,3 +24,5 @@ $ cargo +stable run
      Running `target/debug/git2-segfault`
 Segmentation fault (core dumped)
 ```
+
+`strace.log` was generated with `strace ./target/debug/git2-segfault 2&> strace.log`.
